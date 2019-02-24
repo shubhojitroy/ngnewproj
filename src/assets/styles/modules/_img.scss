@@ -1,0 +1,24 @@
+.display-image {
+  width: 100%;
+  display: block;
+  background: url(./assets/images/banner-event.jpg) no-repeat;
+  background-size: cover;
+  height: 20vh;
+  background-position: top right;
+}
+
+@media (min-width: 48rem) {
+  .display-image {
+    height: 25vh !important;
+  }
+}
+
+@media (min-width: 64rem) {
+  .display-image {
+    height: 33vh !important;
+  }
+}
+
+.event-dlt-img-width {
+  max-width: 50%;
+}

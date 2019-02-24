@@ -2,13 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Ngnewproj</title>
+  <title>New angular project</title>
   <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="./assets/images/favicon.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+  crossorigin="anonymous">
 </head>
 <body>
-  <nnp-root></nnp-root>
+  <nnp-root>
+    <div class="wrapper">
+      <div class="spinner">
+        <div class="curve_top_left"></div>
+        <div class="curve_bottom_right"></div>
+        <div class="curve_top_right"></div>
+        <div class="curve_bottom_left"></div>
+        <div class="center_circle"></div>
+      </div>
+      <h1 class="loading">LOADING
+        <span class="dot_one"> .</span>
+        <span class="dot_two"> .</span>
+        <span class="dot_three"> .</span>
+      </h1>
+    </div>
+  </nnp-root>
 </body>
 </html>

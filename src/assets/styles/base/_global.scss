@@ -1,0 +1,12 @@
+html {
+  /* font-size: 10px; A very bad practise */
+  font-size: 87.5%; /*User by Jonas Schmedtmann - defines what 1 rem shld be */
+  position: relative; /* Sticky footer styles   -------------------------------------------------- */
+  min-height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+   /* Margin bottom by footer height */ /* Sticky footer styles -------------------------------------------------- */
+   margin-bottom: 60px;
+}

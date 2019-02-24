@@ -1,0 +1,20 @@
+html,
+body {
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  color: rgba(0, 0, 0, 0.87);
+  //min-height: 100%;
+  /* Margin bottom by footer height */
+  /* Sticky footer styles -------------------------------------------------- */
+  margin: $body-margin;
+  font-family: $body-font-family;
+  font-size: $default-font-size;
+}
