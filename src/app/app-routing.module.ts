@@ -7,11 +7,11 @@ import { ProductDetailComponent } from './products/product-detail/product-detail
 import { ProductDetailGuard } from './products/service/product-detail.guard';
 
 const routes: Routes = [
+  { path: 'welcome', component: WelcomeComponent },
   { path: 'products', component: ProductListComponent },
   { path: 'product/:id', canActivate: [ ProductDetailGuard ], component: ProductDetailComponent },
-  { path: 'welcome', component: WelcomeComponent },
   { path: '', redirectTo: 'welcome', pathMatch: 'full' },
-  { path: '**', component: ProductListComponent }
+  { path: '**', component: WelcomeComponent }
 ];
 
 @NgModule({
