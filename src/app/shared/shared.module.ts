@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { StarComponent } from './components/star/star.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { StarComponent } from './components/star/star.component';
   ],
   exports: [
     StarComponent,
-    CommonModule
+    CommonModule,
+    FormsModule
   ]
 })
 export class SharedModule { }

@@ -6,7 +6,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { ConvertToSpacesPipe } from '../shared/pipe/convert-to-spaces.pipe';
 import { ProductDetailGuard } from './service/product-detail.guard';
 import { SharedModule } from '../shared/shared.module';
-import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -15,7 +15,6 @@ import { FormsModule } from '@angular/forms';
       { path: 'products', component: ProductListComponent },
       { path: 'products/:id', canActivate: [ProductDetailGuard], component: ProductDetailComponent },
     ]),
-    FormsModule,
     SharedModule,
   ],
   declarations: [
