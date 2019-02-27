@@ -7,8 +7,6 @@ import { ConvertToSpacesPipe } from '../shared/pipe/convert-to-spaces.pipe';
 import { ProductDetailGuard } from './service/product-detail.guard';
 import { SharedModule } from '../shared/shared.module';
 
-
-
 @NgModule({
   imports: [
     RouterModule.forChild([
