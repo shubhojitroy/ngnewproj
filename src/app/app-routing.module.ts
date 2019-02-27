@@ -9,13 +9,13 @@ import { ProductDetailGuard } from './products/service/product-detail.guard';
 const routes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
   { path: 'products', component: ProductListComponent },
-  { path: 'product/:id', canActivate: [ ProductDetailGuard ], component: ProductDetailComponent },
+  { path: 'products/:id', canActivate: [ ProductDetailGuard ], component: ProductDetailComponent },
   { path: '', redirectTo: 'welcome', pathMatch: 'full' },
   { path: '**', component: WelcomeComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { enableTracing: true } )],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

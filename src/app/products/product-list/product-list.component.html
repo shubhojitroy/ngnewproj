@@ -43,7 +43,7 @@
                 [style.margin.px]='imageMargin' />
             </td>
             <td>
-              <a [routerLink]="['/products', product.productId]" routerLinkActive='active'>
+              <a [routerLink]="['/products', product.productId]">
                 {{ product.productName }}
               </a>
             </td>
@@ -62,4 +62,7 @@
 
   </div>
 
+</div>
+<div *ngIf='errorMessage' class='alert alert-danger'>
+  Error: {{ errorMessage }}
 </div>
